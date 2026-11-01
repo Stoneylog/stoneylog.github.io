@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Stoney Logistics | Transport & Logistics Solutions</title>
+<title>Stoney Logistics | Trusted Transport. Delivered Nationwide.</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -28,17 +27,17 @@ scroll-behavior:smooth;
 
 body{
 font-family:'Poppins',sans-serif;
-background:white;
 color:var(--text);
+background:#fff;
 line-height:1.8;
 }
 
 header{
 position:fixed;
-width:100%;
 top:0;
+width:100%;
 background:rgba(255,255,255,0.95);
-backdrop-filter:blur(10px);
+backdrop-filter:blur(12px);
 z-index:1000;
 box-shadow:0 3px 15px rgba(0,0,0,0.08);
 }
@@ -46,7 +45,7 @@ box-shadow:0 3px 15px rgba(0,0,0,0.08);
 nav{
 max-width:1400px;
 margin:auto;
-padding:18px 30px;
+padding:15px 30px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -71,8 +70,11 @@ font-weight:600;
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url('transporter.jpg');
+linear-gradient(
+rgba(0,0,0,0.65),
+rgba(0,0,0,0.65)
+),
+url('fleet1.jpg');
 
 background-size:cover;
 background-position:center;
@@ -89,25 +91,25 @@ max-width:900px;
 }
 
 .hero h1{
-font-size:5rem;
-line-height:1.05;
+font-size:70px;
 font-weight:800;
+line-height:1.05;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:1.3rem;
+font-size:22px;
 margin-bottom:35px;
 }
 
 .btn{
 display:inline-block;
-padding:15px 30px;
-border-radius:8px;
-font-weight:600;
+padding:16px 34px;
+border-radius:10px;
 text-decoration:none;
-margin:8px;
-transition:.3s;
+font-weight:600;
+margin:10px;
+transition:0.3s;
 }
 
 .btn:hover{
@@ -137,7 +139,8 @@ padding:50px 20px;
 }
 
 .stat h3{
-font-size:3rem;
+font-size:48px;
+font-weight:800;
 }
 
 section{
@@ -150,17 +153,17 @@ margin:auto;
 }
 
 .title{
-font-size:2.8rem;
+font-size:42px;
 text-align:center;
-margin-bottom:20px;
 color:var(--navy);
+margin-bottom:20px;
 }
 
 .subtitle{
+text-align:center;
 max-width:900px;
 margin:auto;
-text-align:center;
-margin-bottom:50px;
+margin-bottom:60px;
 }
 
 .grid{
@@ -173,7 +176,7 @@ gap:25px;
 background:white;
 padding:35px;
 border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .card h3{
@@ -182,15 +185,30 @@ color:var(--navy);
 }
 
 .alt{
-background:#f8fafc;
+background:#f7f9fc;
+}
+
+.fleet-gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.fleet-gallery img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
 }
 
 .cta{
 background:var(--navy);
-color:white;
 padding:70px;
 border-radius:20px;
 text-align:center;
+color:white;
 }
 
 .contact-grid{
@@ -200,17 +218,17 @@ gap:25px;
 }
 
 .contact-card{
-padding:30px;
 background:white;
+padding:35px;
 border-radius:15px;
 text-align:center;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .contact-card a{
 text-decoration:none;
-color:var(--navy);
 font-weight:600;
+color:var(--navy);
 }
 
 footer{
@@ -226,17 +244,21 @@ right:20px;
 bottom:20px;
 background:#25D366;
 color:white;
-padding:16px 24px;
-border-radius:40px;
+padding:16px 22px;
+border-radius:50px;
 text-decoration:none;
 font-weight:600;
-box-shadow:0 10px 20px rgba(0,0,0,.2);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:3rem;
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
 }
 
 nav{
@@ -258,19 +280,19 @@ grid-template-columns:repeat(2,1fr);
 </style>
 
 </head>
-
 <body>
 
 <header>
 
 <nav>
 
-<img src="logo.png" class="logo" alt="Stoney Logistics">
+<img src="logo.png.jpg" alt="Stoney Logistics" class="logo">
 
 <ul>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#shipping">Shipping</a></li>
+<li><a href="#fleet">Fleet</a></li>
 <li><a href="#careers">Careers</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
@@ -289,9 +311,7 @@ Delivered Nationwide.
 </h1>
 
 <p>
-
-Professional vehicle transport, courier services and vehicle shipping solutions across the United Kingdom and Africa.
-
+Professional vehicle transport, courier services and vehicle shipping from the United Kingdom to Africa.
 </p>
 
 <a href="#contact" class="btn primary">Request A Quote</a>
@@ -323,7 +343,7 @@ Support
 
 <div class="stat">
 <h3>100%</h3>
-Professional Service
+Reliable Service
 </div>
 
 </div>
@@ -332,19 +352,17 @@ Professional Service
 
 <div class="container">
 
-<h2 class="title">
-About Stoney Logistics
-</h2>
+<h2 class="title">About Stoney Logistics</h2>
 
 <p class="subtitle">
 
-At Stoney Logistics, we provide dependable transport and logistics solutions for businesses and private customers throughout the United Kingdom.
+Stoney Logistics provides dependable transport and logistics solutions for businesses and private customers throughout the United Kingdom.
 
 From vehicle transportation and courier services to nationwide logistics support and vehicle shipping solutions, we understand that every movement matters.
 
-Whether you are relocating a vehicle, arranging urgent deliveries or requiring dedicated transport support, our team is committed to delivering a service you can rely on.
+Whether you're moving a vehicle, arranging urgent deliveries or looking for a reliable transport partner, our focus remains the same:
 
-Communicate clearly. Deliver safely. Operate professionally.
+<strong>Deliver safely. Deliver efficiently. Deliver professionally.</strong>
 
 </p>
 
@@ -352,7 +370,7 @@ Communicate clearly. Deliver safely. Operate professionally.
 
 </section>
 
-<section id="services" class="alt">
+<section class="alt" id="services">
 
 <div class="container">
 
@@ -363,28 +381,28 @@ Communicate clearly. Deliver safely. Operate professionally.
 <div class="card">
 <h3>Vehicle Transport</h3>
 <p>
-Vehicle collection and delivery services throughout the UK for dealerships, fleet operators and private customers.
+Professional vehicle collection and delivery services throughout the UK.
 </p>
 </div>
 
 <div class="card">
 <h3>Courier Services</h3>
 <p>
-Same-day delivery, dedicated van services, urgent consignments and business deliveries.
-</p>
-</div>
-
-<div class="card">
-<h3>Commercial Logistics</h3>
-<p>
-Flexible transport support for organisations operating throughout the United Kingdom.
+Same-day, dedicated and scheduled delivery services for businesses and individuals.
 </p>
 </div>
 
 <div class="card">
 <h3>Consignment Delivery</h3>
 <p>
-Reliable movement of parcels, commercial goods and customer consignments.
+Reliable transportation of parcels, freight and commercial consignments.
+</p>
+</div>
+
+<div class="card">
+<h3>Commercial Logistics</h3>
+<p>
+Flexible logistics and distribution support tailored around customer requirements.
 </p>
 </div>
 
@@ -406,7 +424,7 @@ Vehicle Shipping To Africa
 
 We support customers exporting vehicles from the United Kingdom to destinations across Africa.
 
-Whether transporting a single vehicle or multiple units, we provide dependable support including vehicle collection, export preparation, port delivery and shipping coordination.
+Services include vehicle collection, transport, port delivery and shipping coordination.
 
 </p>
 
@@ -414,34 +432,58 @@ Whether transporting a single vehicle or multiple units, we provide dependable s
 
 </section>
 
-<section class="alt">
+<section class="alt" id="fleet">
 
 <div class="container">
 
-<h2 class="title">
-Why Choose Stoney Logistics
-</h2>
+<h2 class="title">Our Fleet & Operations</h2>
+
+<p class="subtitle">
+
+Supporting vehicle transport, courier services and logistics operations throughout the United Kingdom.
+
+</p>
+
+<div class="fleet-gallery">
+
+<img src="fleet1.jpg" alt="Fleet">
+
+<img src="fleet2.jpg" alt="Fleet">
+
+<img src="fleet3.jpg" alt="Fleet">
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="title">Why Choose Stoney Logistics</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>Experience</h3>
-<p>Over a decade of transport and logistics industry experience.</p>
+<p>Over a decade of transport industry experience.</p>
 </div>
 
 <div class="card">
 <h3>Reliability</h3>
-<p>Consistent communication and dependable transport solutions.</p>
+<p>Professional service and dependable transport solutions.</p>
 </div>
 
 <div class="card">
 <h3>Nationwide Coverage</h3>
-<p>Supporting businesses and individuals across the UK.</p>
+<p>Supporting businesses and private customers throughout the UK.</p>
 </div>
 
 <div class="card">
-<h3>Professional Service</h3>
-<p>Focused on delivering safely, efficiently and on time.</p>
+<h3>Communication</h3>
+<p>Clear updates and responsive customer support.</p>
 </div>
 
 </div>
@@ -450,19 +492,19 @@ Why Choose Stoney Logistics
 
 </section>
 
-<section id="careers">
+<section class="alt" id="careers">
 
 <div class="container">
 
-<h2 class="title">
-Owner Drivers Wanted
-</h2>
+<h2 class="title">Owner Drivers Wanted</h2>
 
 <p class="subtitle">
 
-Stoney Logistics is always interested in hearing from professional owner drivers looking to join a growing logistics network.
+We're always interested in hearing from professional owner drivers.
 
 Suitable vehicles include:
+
+<br><br>
 
 SWB Vans • LWB Vans • Panel Vans • Luton Vans
 
@@ -470,26 +512,16 @@ SWB Vans • LWB Vans • Panel Vans • Luton Vans
 
 <div class="cta">
 
-<h2>
-Apply Anytime
-</h2>
+<h2>Apply Anytime</h2>
 
 <p>
-
 Send your CV and vehicle details to:
-
 </p>
 
 <br>
 
 <h3>
-
-<a href="mailto:admin@stoneylogistics.com" style="color:white;text-decoration:none;">
-
 admin@stoneylogistics.com
-
-</a>
-
 </h3>
 
 </div>
@@ -498,13 +530,11 @@ admin@stoneylogistics.com
 
 </section>
 
-<section id="contact" class="alt">
+<section id="contact">
 
 <div class="container">
 
-<h2 class="title">
-Contact Us
-</h2>
+<h2 class="title">Contact Us</h2>
 
 <div class="contact-grid">
 
@@ -544,7 +574,7 @@ admin@stoneylogistics.com
 
 <footer>
 
-<h3>STONEY LOGISTICS</h3>
+<h2>STONEY LOGISTICS</h2>
 
 <p>
 Transport • Logistics • Vehicle Shipping

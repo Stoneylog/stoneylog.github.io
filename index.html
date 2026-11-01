@@ -1,451 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stoney Logistics | Transport & Logistics Solutions</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#333;
+}
+
+header{
+background:#fff;
+position:fixed;
+top:0;
+width:100%;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+nav{
+max-width:1400px;
+margin:auto;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+height:70px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+font-weight:600;
+color:#003B7A;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('transporter.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content{
+max-width:1000px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.3rem;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+text-decoration:none;
+margin:8px;
+font-weight:bold;
+border-radius:5px;
+}
+
+.red{
+background:#D71E28;
+color:white;
+}
+
+.blue{
+background:#003B7A;
+color:white;
+}
+
+.green{
+background:#25D366;
+color:white;
+}
+
+section{
+padding:100px 8%;
+}
+
+h2{
+color:#003B7A;
+margin-bottom:25px;
+font-size:2.5rem;
+text-align:center;
+}
+
+.stats{
+background:#003B7A;
+color:white;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+padding:30px;
+}
+
+.stat h3{
+font-size:3rem;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+padding:30px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+border-radius:10px;
+background:white;
+}
+
+.card h3{
+color:#D71E28;
+margin-bottom:15px;
+}
+
+.dark{
+background:#f5f7fa;
+}
+
+.transport-image{
+width:100%;
+max-width:1000px;
+display:block;
+margin:auto;
+border-radius:12px;
+}
+
+.quote{
+background:#003B7A;
+color:white;
+}
+
+.quote h2{
+color:white;
+}
+
+form{
+max-width:800px;
+margin:auto;
+display:grid;
+gap:15px;
+}
+
+input,select,textarea{
+padding:15px;
+font-size:16px;
+}
+
+button{
+padding:16px;
+background:#D71E28;
+color:white;
+border:none;
+font-size:18px;
+cursor:pointer;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+display:block;
+margin:15px;
+font-size:22px;
+text-decoration:none;
+color:#003B7A;
+font-weight:bold;
+}
+
+footer{
+background:#111;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.4rem;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<img src="logo.png" class="logo" alt="Stoney Logistics">
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#industries">Industries</a></li>
+<li><a href="#fleet">Fleet</a></li>
+<li><a href="#quote">Quote</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
 <section class="hero">
 
-<div class="overlay">
-
-<h4>STONEY LOGISTICS</h4>
+<div class="hero-content">
 
 <h1>
-Delivering Excellence Across The United Kingdom
+Delivering Transport & Logistics Solutions Across The United Kingdom
 </h1>
 
 <p>
 
-Vehicle Transport • Courier Services • Consignment Delivery •
-Commercial Logistics Solutions
+Vehicle Transport • Courier Services • Consignment Delivery • Commercial Logistics
 
 </p>
 
 <p>
 
-Trusted by businesses and private customers nationwide, providing
-reliable transport solutions backed by over 10 years of industry
-experience.
+Trusted nationwide for professional vehicle transport, dedicated courier services and reliable logistics support.
 
-</p>
-
-<div class="hero-buttons">
-
-<a href="#quote" class="btn-red">
-Request A Quote
-</a>
-
-<a href="tel:+447424256336" class="btn-blue">
-Call Us
-</a>
-
-<a href="https://wa.me/447424256336?text=Hello%20Stoney%20Logistics,%20I%20would%20like%20a%20quote."
-class="btn-green">
-WhatsApp Us
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="stats">
-
-<div class="stat">
-<h2>10+</h2>
-<p>Years Industry Experience</p>
-</div>
-
-<div class="stat">
-<h2>UK</h2>
-<p>Nationwide Coverage</p>
-</div>
-
-<div class="stat">
-<h2>24/7</h2>
-<p>Customer Support</p>
-</div>
-
-<div class="stat">
-<h2>100%</h2>
-<p>Professional Service</p>
-</div>
-
-</section>
-
-
-<section id="about">
-
-<h2>About Stoney Logistics</h2>
-
-<p>
-
-Founded and led by <strong>Livingstone Madziya</strong>, Stoney Logistics
-has been built on more than a decade of experience within the
-transport and logistics industry.
-
-</p>
-
-<p>
-
-We provide professional vehicle transport, dedicated courier services,
-same-day deliveries and commercial logistics solutions for businesses
-and private customers throughout the United Kingdom.
-
-</p>
-
-<p>
-
-Our reputation is built on reliability, communication and delivering
-every consignment with the highest levels of professionalism.
-
-</p>
-
-</section>
-
-
-<section id="services">
-
-<h2>Our Services</h2>
-
-<div class="service-grid">
-
-<div>
-
-<h3>Vehicle Transport</h3>
-
-<p>
-Professional vehicle transportation for dealerships, auctions,
-businesses and private customers throughout the UK.
-</p>
-
-</div>
-
-<div>
-
-<h3>Courier Services</h3>
-
-<p>
-Fast and dependable collection and delivery services for urgent
-consignments and scheduled transport requirements.
-</p>
-
-</div>
-
-<div>
-
-<h3>Same Day Delivery</h3>
-
-<p>
-Time-critical and urgent deliveries completed efficiently and
-professionally nationwide.
-</p>
-
-</div>
-
-<div>
-
-<h3>Commercial Logistics</h3>
-
-<p>
-Tailored transport solutions supporting organisations and commercial
-operations across multiple industries.
-</p>
-
-</div>
-
-<div>
-
-<h3>Contract Logistics</h3>
-
-<p>
-Dedicated transport support for businesses requiring ongoing
-delivery solutions.
-</p>
-
-</div>
-
-<div>
-
-<h3>Trade Vehicle Movements</h3>
-
-<p>
-Supporting dealers, fleet operators and automotive businesses with
-professional vehicle transportation services.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="industries">
-
-<h2>Industries We Support</h2>
-
-<div class="industry-grid">
-
-<div>
-<h3>Automotive</h3>
-<p>Vehicle dealerships, fleet operators and motor trade businesses.</p>
-</div>
-
-<div>
-<h3>Retail</h3>
-<p>Store replenishment and distribution services.</p>
-</div>
-
-<div>
-<h3>E-Commerce</h3>
-<p>Dedicated delivery support for online retailers.</p>
-</div>
-
-<div>
-<h3>Construction</h3>
-<p>Time-sensitive equipment and material deliveries.</p>
-</div>
-
-<div>
-<h3>Manufacturing</h3>
-<p>Business-to-business logistics support.</p>
-</div>
-
-<div>
-<h3>Commercial</h3>
-<p>Flexible transport solutions tailored to business requirements.</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section id="fleet">
-
-<h2>Our Fleet</h2>
-
-<img src="transporter.jpg" alt="Vehicle Transporter">
-
-<p>
-
-Our growing fleet supports both vehicle transportation and commercial
-delivery operations throughout the United Kingdom.
-
-</p>
-
-<ul>
-
-<li>Dedicated Delivery Vans</li>
-
-<li>Long Wheel Base Transport Vehicles</li>
-
-<li>Multi-Drop Distribution Support</li>
-
-<li>Vehicle Transportation Services</li>
-
-<li>Nationwide Delivery Coverage</li>
-
-</ul>
-
-</section>
-
-
-<section id="why-us">
-
-<h2>Why Choose Stoney Logistics?</h2>
-
-<div class="why-grid">
-
-<div>✓ Over 10 Years Industry Experience</div>
-
-<div>✓ Nationwide UK Coverage</div>
-
-<div>✓ Fully Insured Operations</div>
-
-<div>✓ Fast Quote Turnaround</div>
-
-<div>✓ Dedicated Customer Support</div>
-
-<div>✓ Professional Transport Solutions</div>
-
-</div>
-
-</section>
-
-
-<section id="testimonials">
-
-<h2>Customer Feedback</h2>
-
-<div class="testimonial">
-
-<p>
-
-"Excellent service from start to finish. Communication was clear,
-collection was on time and the vehicle arrived safely. Highly
-recommended."
-
-</p>
-
-<h4>Vehicle Transport Customer</h4>
-
-</div>
-
-<div class="testimonial">
-
-<p>
-
-"Reliable logistics partner with fantastic communication and
-professional service."
-
-</p>
-
-<h4>Commercial Client</h4>
-
-</div>
-
-<div class="testimonial">
-
-<p>
-
-"Competitive pricing, professional drivers and dependable
-deliveries every time."
-
-</p>
-
-<h4>Courier Customer</h4>
-
-</div>
-
-</section>
-
-
-<section id="quote">
-
-<h2>Request A Quote</h2>
-
-<form>
-
-<input type="text" placeholder="Full Name">
-
-<input type="text" placeholder="Company Name">
-
-<input type="email" placeholder="Email Address">
-
-<input type="tel" placeholder="Telephone Number">
-
-<select>
-
-<option>Vehicle Transport</option>
-
-<option>Courier Services</option>
-
-<option>Consignment Delivery</option>
-
-<option>Commercial Logistics</option>
-
-</select>
-
-<input type="text" placeholder="Collection Location">
-
-<input type="text" placeholder="Delivery Location">
-
-<textarea placeholder="Tell us about your requirements"></textarea>
-
-<button type="submit">
-
-Request Quote
-
-</button>
-
-</form>
-
-</section>
-
-
-<section id="contact">
-
-<h2>Contact Us</h2>
-
-<p>
-
-<strong>Telephone:</strong>
-
-<a href="tel:+447424256336">
-
-+44 7424 256336
-
-</a>
-
-</p>
-
-<p>
-
-<strong>WhatsApp:</strong>
-
-<a href="https://wa.me/447424256336">
-
-+44 7424 256336
-
-</a>
-
-</p>
-
-<p>
-
-<strong>WhatsApp:</strong>
-
-<a href="https://wa.me/447555242743">
-
-+44 7555 242743
-
-</a>
-
-</p>
-
-<p>
-
-<strong>Email:</strong>
-
-<a href="mailto:admin@stoneylogistics.com">
-
-admin@stoneylogistics.com
-
-</a>
-
-</p>
-
-</section>
-
-
-<footer>
-
-<h3>STONEY LOGISTICS</h3>
-
-<p>
-
-Vehicle Transport • Courier Services • Consignment Delivery •
-Commercial Logistics
-
-</p>
-
-<p>
-
-Founded by Livingstone Madziya and backed by more than 10 years of
-industry experience.
-
-</p>
-
-<p>
-
-© 2026 Stoney Logistics. All Rights Reserved.
-
-</p>
-
-</footer>
-
-
-<a href="https://wa.me/447424256336?text=Hello%20Stoney%20Logistics,%20I%20would%20like%20a%20quote."
-class="floating-whatsapp">
-
-WhatsApp Quote
-
-</a>
+<

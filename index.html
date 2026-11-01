@@ -6,33 +6,49 @@
 
 <title>Stoney Logistics | Transport & Logistics Solutions</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
+
+:root{
+--navy:#0A2540;
+--red:#E31E24;
+--light:#F8FAFC;
+--text:#334155;
+--white:#ffffff;
+}
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI,Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-line-height:1.6;
-color:#333;
+font-family:'Poppins',sans-serif;
+background:white;
+color:var(--text);
+line-height:1.7;
 }
 
 header{
-background:#fff;
 position:fixed;
 top:0;
 width:100%;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(12px);
 z-index:1000;
+box-shadow:0 2px 20px rgba(0,0,0,.05);
 }
 
 nav{
 max-width:1400px;
 margin:auto;
-padding:20px;
+padding:18px 30px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -45,28 +61,32 @@ height:70px;
 nav ul{
 display:flex;
 list-style:none;
-gap:25px;
+gap:35px;
 }
 
 nav a{
 text-decoration:none;
 font-weight:600;
-color:#003B7A;
+color:var(--navy);
 }
 
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+linear-gradient(
+rgba(10,37,64,.75),
+rgba(10,37,64,.75)
+),
 url('transporter.jpg');
+
 background-size:cover;
 background-position:center;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
-color:white;
 padding:20px;
+color:white;
 }
 
 .hero-content{
@@ -74,164 +94,211 @@ max-width:1000px;
 }
 
 .hero h1{
-font-size:4rem;
-margin-bottom:20px;
+
+font-size:72px;
+line-height:1.05;
+font-weight:800;
+
+margin-bottom:25px;
 }
 
 .hero p{
-font-size:1.3rem;
-margin-bottom:30px;
+
+font-size:22px;
+
+max-width:850px;
+margin:auto;
+
+margin-bottom:40px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
 }
 
 .btn{
-display:inline-block;
-padding:15px 30px;
+padding:16px 34px;
 text-decoration:none;
-margin:8px;
-font-weight:bold;
-border-radius:5px;
+font-weight:600;
+border-radius:10px;
+transition:.3s;
 }
 
-.red{
-background:#D71E28;
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.primary{
+background:var(--red);
 color:white;
 }
 
-.blue{
-background:#003B7A;
+.secondary{
+border:2px solid white;
 color:white;
 }
 
-.green{
-background:#25D366;
+.stats{
+
+background:var(--navy);
 color:white;
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+
+text-align:center;
+}
+
+.stat{
+padding:50px 30px;
+}
+
+.stat h3{
+
+font-size:48px;
+color:#ffffff;
+
+font-weight:800;
 }
 
 section{
 padding:100px 8%;
 }
 
-h2{
-color:#003B7A;
+.container{
+max-width:1300px;
+margin:auto;
+}
+
+.section-title{
+
+font-size:42px;
+
+text-align:center;
+
 margin-bottom:25px;
-font-size:2.5rem;
+
+color:var(--navy);
+}
+
+.section-subtitle{
+max-width:900px;
+margin:auto;
 text-align:center;
-}
-
-.stats{
-background:#003B7A;
-color:white;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-text-align:center;
-}
-
-.stat{
-padding:30px;
-}
-
-.stat h3{
-font-size:3rem;
+margin-bottom:60px;
 }
 
 .grid{
 display:grid;
+gap:25px;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
 }
 
 .card{
-padding:30px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-border-radius:10px;
+
 background:white;
+
+padding:35px;
+
+border-radius:15px;
+
+box-shadow:0 10px 35px rgba(0,0,0,.08);
 }
 
 .card h3{
-color:#D71E28;
 margin-bottom:15px;
+color:var(--navy);
 }
 
-.dark{
-background:#f5f7fa;
+.alt{
+background:#f8fafc;
 }
 
-.transport-image{
+.fleet-image{
 width:100%;
-max-width:1000px;
-display:block;
-margin:auto;
-border-radius:12px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
-.quote{
-background:#003B7A;
+.quote-box{
+
+background:var(--navy);
+
+padding:60px;
+
+border-radius:20px;
+
 color:white;
-}
-
-.quote h2{
-color:white;
-}
-
-form{
-max-width:800px;
-margin:auto;
-display:grid;
-gap:15px;
-}
-
-input,select,textarea{
-padding:15px;
-font-size:16px;
-}
-
-button{
-padding:16px;
-background:#D71E28;
-color:white;
-border:none;
-font-size:18px;
-cursor:pointer;
-}
-
-.contact{
 text-align:center;
 }
 
-.contact a{
-display:block;
-margin:15px;
-font-size:22px;
+.quote-box h2{
+color:white;
+margin-bottom:20px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.contact-card{
+padding:30px;
+background:white;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.contact-card a{
 text-decoration:none;
-color:#003B7A;
-font-weight:bold;
+color:var(--navy);
+font-weight:600;
 }
 
 footer{
-background:#111;
+
+background:var(--navy);
+
 color:white;
-padding:40px;
+
 text-align:center;
+
+padding:50px 20px;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+right:25px;
+bottom:25px;
+
 background:#25D366;
+
 color:white;
-padding:15px 20px;
-border-radius:40px;
+
+padding:16px 25px;
+
+border-radius:50px;
+
 text-decoration:none;
-font-weight:bold;
-box-shadow:0 4px 15px rgba(0,0,0,.3);
+
+font-weight:600;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
 
 .hero h1{
-font-size:2.4rem;
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
 }
 
 nav{
@@ -242,6 +309,10 @@ nav ul{
 margin-top:15px;
 flex-wrap:wrap;
 justify-content:center;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
 }
 
 }
@@ -255,14 +326,13 @@ justify-content:center;
 
 <nav>
 
-<img src="logo.png" class="logo" alt="Stoney Logistics">
+<img src="logo.png" alt="Stoney Logistics" class="logo">
 
 <ul>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
-<li><a href="#industries">Industries</a></li>
-<li><a href="#fleet">Fleet</a></li>
-<li><a href="#quote">Quote</a></li>
+<li><a href="#shipping">Shipping</a></li>
+<li><a href="#careers">Careers</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
@@ -275,17 +345,43 @@ justify-content:center;
 <div class="hero-content">
 
 <h1>
-Delivering Transport & Logistics Solutions Across The United Kingdom
+Transport.<br>
+Logistics.<br>
+Delivered.
 </h1>
 
 <p>
 
-Vehicle Transport • Courier Services • Consignment Delivery • Commercial Logistics
+Reliable vehicle transport, courier services and logistics solutions throughout the United Kingdom.
 
 </p>
 
-<p>
+<div class="buttons">
 
-Trusted nationwide for professional vehicle transport, dedicated courier services and reliable logistics support.
+<a href="#contact" class="btn primary">
+Request Quote
+</a>
 
-<
+<a href="https://wa.me/447424256336" class="btn secondary">
+WhatsApp Us
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="stats">
+
+<div class="stat">
+<h3>10+</h3>
+Years Experience
+</div>
+
+<div class="stat">
+<h3>UK</h3>
+Nationwide Coverage
+</div>
+
+<div 

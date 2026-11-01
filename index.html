@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stoney Logistics | Transport & Logistics Solutions</title>
+
+<title>Stoney Logistics | Vehicle Transport & Nationwide Deliveries</title>
 
 <style>
 
@@ -11,69 +12,119 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-font-family:Segoe UI,Arial,sans-serif;
+font-family:'Segoe UI',sans-serif;
+background:#f6f8fb;
+color:#222;
 line-height:1.6;
-background:#f5f7fa;
-color:#333;
 }
 
-header{
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url('https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1600');
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#002e5d;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
+}
+
+nav a:hover{
+color:#ff2b2b;
+}
+
+.logo-nav{
+height:55px;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
 background-position:center;
-height:100vh;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
-color:white;
 padding:20px;
+color:white;
+}
+
+.hero-content{
+max-width:1000px;
+}
+
+.hero-content img{
+width:240px;
+margin-bottom:25px;
 }
 
 .hero h1{
-font-size:60px;
-margin-bottom:20px;
-color:white;
+font-size:4rem;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:24px;
-margin-bottom:30px;
+font-size:1.4rem;
+margin-bottom:35px;
 }
 
 .btn{
 display:inline-block;
-padding:15px 35px;
-background:#d71920;
-color:white;
-text-decoration:none;
-border-radius:5px;
-font-weight:bold;
+padding:15px 30px;
 margin:10px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.red{
+background:#e1252a;
+color:white;
+}
+
+.blue{
+background:#0050a0;
+color:white;
+}
+
+.green{
+background:#25D366;
+color:white;
 }
 
 .btn:hover{
-background:#b31218;
+transform:translateY(-3px);
 }
 
-.services{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
+section{
+padding:90px 8%;
 }
 
 .section-title{
 text-align:center;
-font-size:40px;
+font-size:42px;
 margin-bottom:50px;
-color:#004b91;
+color:#003c78;
 }
 
-.grid{
+.services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
@@ -82,53 +133,102 @@ gap:25px;
 .card{
 background:white;
 padding:30px;
-border-radius:10px;
-box-shadow:0 3px 15px rgba(0,0,0,.1);
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 text-align:center;
 }
 
 .card h3{
-color:#d71920;
 margin-bottom:15px;
+color:#d92027;
 }
 
 .about{
-background:#004b91;
+background:#003c78;
 color:white;
-padding:80px 20px;
 text-align:center;
 }
 
 .about p{
-max-width:900px;
+max-width:1000px;
 margin:auto;
-font-size:20px;
+font-size:1.15rem;
+}
+
+.fleet{
+background:white;
+}
+
+.fleet-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.fleet-box{
+background:#f5f6f8;
+padding:25px;
+border-radius:15px;
+text-align:center;
 }
 
 .contact{
-padding:80px 20px;
+background:#f7f9fc;
 text-align:center;
 }
 
-.contact a{
+.contact-links a{
 display:block;
-margin:15px;
 font-size:22px;
+margin:18px 0;
 text-decoration:none;
-color:#004b91;
+color:#003c78;
 font-weight:bold;
 }
 
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
+.contact-links a:hover{
+color:#d92027;
 }
 
-.logo{
-max-width:350px;
-margin-bottom:20px;
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.whatsapp-float{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 25px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+z-index:9999;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero p{
+font-size:1.1rem;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav div{
+margin-top:10px;
+}
+
 }
 
 </style>
@@ -136,11 +236,24 @@ margin-bottom:20px;
 
 <body>
 
-<header>
+<nav>
 
-<div class="hero">
+<img src="logo.png" class="logo-nav" alt="Stoney Logistics">
 
-<img src="logo.png" class="logo" alt="Stoney Logistics">
+<div>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#fleet">Fleet</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img src="logo.png" alt="Stoney Logistics Logo">
 
 <h1>STONEY LOGISTICS</h1>
 
@@ -148,23 +261,161 @@ margin-bottom:20px;
 Vehicle Transport • Consignment Delivery • Nationwide Logistics
 </p>
 
-<a href="mailto:admin@stoneylogistics.com" class="btn">
-Get a Quote
+<a href="tel:+447424256336" class="btn red">
+📞 Call Now
 </a>
 
-<a href="tel:+447000000000" class="btn">
-Call Us
+<a href="https://wa.me/447424256336?text=Hello%20Stoney%20Logistics,%20I%20would%20like%20a%20quote."
+class="btn green">
+💬 WhatsApp Quote
+</a>
+
+<a href="mailto:admin@stoneylogistics.com"
+class="btn blue">
+📧 Email Us
 </a>
 
 </div>
 
-</header>
+</section>
 
-<section class="services">
+<section id="services">
 
 <h2 class="section-title">Our Services</h2>
 
-<div class="grid">
+<div class="services">
 
 <div class="card">
-<h3>
+<h3>Vehicle Transport</h3>
+<p>
+Professional nationwide vehicle collection and delivery for dealerships, auctions, businesses and private customers.
+</p>
+</div>
+
+<div class="card">
+<h3>Consignment Delivery</h3>
+<p>
+Reliable and secure deliveries for parcels, pallets, commercial freight and customer consignments.
+</p>
+</div>
+
+<div class="card">
+<h3>Same Day Courier</h3>
+<p>
+Urgent same-day transport solutions throughout the UK.
+</p>
+</div>
+
+<div class="card">
+<h3>Fleet Logistics</h3>
+<p>
+Multi-van delivery capability supporting businesses with scalable logistics solutions.
+</p>
+</div>
+
+<div class="card">
+<h3>Dealer Movements</h3>
+<p>
+Vehicle collection and delivery services for trade customers and dealerships.
+</p>
+</div>
+
+<div class="card">
+<h3>Nationwide Coverage</h3>
+<p>
+Fast, dependable transport services throughout the United Kingdom.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2 class="section-title" style="color:white;">About Stoney Logistics</h2>
+
+<p>
+
+Stoney Logistics provides professional logistics services combining vehicle transportation, courier solutions and nationwide delivery services. Our fleet supports businesses and private customers with dependable transport, excellent customer service and efficient delivery solutions throughout the United Kingdom.
+
+</p>
+
+</section>
+
+<section id="fleet" class="fleet">
+
+<h2 class="section-title">Our Fleet</h2>
+
+<div class="fleet-grid">
+
+<div class="fleet-box">
+<h3>🚐 Delivery Vans</h3>
+<p>
+Fast and efficient local and nationwide consignment deliveries.
+</p>
+</div>
+
+<div class="fleet-box">
+<h3>🚚 Logistics Vehicles</h3>
+<p>
+Supporting commercial and contract logistics requirements.
+</p>
+</div>
+
+<div class="fleet-box">
+<h3>🚛 Vehicle Transport</h3>
+<p>
+Safe and professional vehicle shipping services across the UK.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Get A Quote</h2>
+
+<div class="contact-links">
+
+<a href="tel:+447424256336">
+📞 +44 7424 256336
+</a>
+
+<a href="https://wa.me/447424256336">
+💬 WhatsApp +44 7424 256336
+</a>
+
+<a href="https://wa.me/447555242743">
+💬 WhatsApp +44 7555 242743
+</a>
+
+<a href="mailto:admin@stoneylogistics.com">
+📧 admin@stoneylogistics.com
+</a>
+
+<a href="https://stoneylogistics.com">
+🌐 stoneylogistics.com
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Stoney Logistics. All Rights Reserved.
+</p>
+
+</footer>
+
+<a class="whatsapp-float"
+href="https://wa.me/447424256336?text=Hello%20Stoney%20Logistics,%20I%20need%20a%20quote.">
+💬 WhatsApp Quote
+</a>
+
+</body>
+</html>

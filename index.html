@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Stoney Logistics | Vehicle Transport, Courier & Logistics Services</title>
+
+<meta name="description" content="Stoney Logistics provides vehicle transport, same day courier, consignment delivery and nationwide logistics solutions across the United Kingdom.">
 
 <style>
 
@@ -11,12 +14,14 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
+font-family:'Segoe UI',sans-serif;
 color:#333;
-line-height:1.6;
+line-height:1.7;
+background:#fff;
 }
 
 nav{
@@ -24,12 +29,12 @@ position:fixed;
 top:0;
 width:100%;
 background:#fff;
-padding:20px 6%;
+padding:18px 6%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
-z-index:1000;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:9999;
 }
 
 .logo{
@@ -38,53 +43,69 @@ height:70px;
 
 nav ul{
 display:flex;
-list-style:none;
 gap:30px;
+list-style:none;
 }
 
-nav a{
+nav ul li a{
 text-decoration:none;
-color:#003a70;
+color:#003B7A;
 font-weight:600;
 }
 
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
 url('hero.jpg');
 background-size:cover;
 background-position:center;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
-color:white;
 padding:20px;
+color:#fff;
 }
 
 .hero-content{
-max-width:950px;
+max-width:1100px;
 }
 
 .hero h1{
-font-size:4rem;
-margin-bottom:20px;
+font-size:64px;
+margin-bottom:15px;
+font-weight:700;
 }
 
 .hero p{
-font-size:1.3rem;
-margin-bottom:40px;
+font-size:22px;
+max-width:900px;
+margin:auto;
+margin-bottom:35px;
 }
 
 .btn{
-padding:16px 35px;
-background:#d71920;
-color:white;
-text-decoration:none;
-font-weight:600;
 display:inline-block;
+padding:16px 34px;
+text-decoration:none;
 margin:10px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn-primary{
+background:#D71E28;
+color:#fff;
+}
+
+.btn-secondary{
+background:#003B7A;
+color:#fff;
+}
+
+.btn:hover{
+transform:translateY(-3px);
 }
 
 .section{
@@ -92,161 +113,20 @@ padding:100px 8%;
 }
 
 .section-title{
-font-size:2.5rem;
+font-size:42px;
 text-align:center;
 margin-bottom:60px;
-color:#003a70;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
-
-.card{
-background:white;
-padding:35px;
-box-shadow:0 0 15px rgba(0,0,0,.08);
-}
-
-.card h3{
-margin-bottom:15px;
-color:#d71920;
+color:#003B7A;
 }
 
 .intro{
 max-width:1100px;
 margin:auto;
 text-align:center;
-font-size:1.15rem;
+font-size:18px;
 }
 
-.dark{
-background:#003a70;
-color:white;
-}
-
-.dark .section-title{
-color:white;
-}
-
-.contact-box{
-max-width:900px;
-margin:auto;
-text-align:center;
-}
-
-.contact-box a{
-display:block;
-font-size:1.2rem;
-margin:15px 0;
-text-decoration:none;
-color:#003a70;
-font-weight:600;
-}
-
-footer{
-background:#111;
-color:white;
-padding:30px;
-text-align:center;
-}
-
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-padding:15px 25px;
-text-decoration:none;
-font-weight:600;
-border-radius:40px;
-}
-
-</style>
-</head>
-
-<body>
-
-<nav>
-
-<img src="logo.png" alt="Stoney Logistics" class="logo">
-
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#fleet">Fleet</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
-<section class="hero" id="home">
-
-<div class="hero-content">
-
-<h1>Transport Solutions Across The United Kingdom</h1>
-
-<p>
-Stoney Logistics provides professional vehicle transport,
-consignment delivery, courier services and logistics support for
-businesses and individuals nationwide.
-</p>
-
-<a href="#contact" class="btn">
-Request A Quote
-</a>
-
-<a href="tel:+447424256336" class="btn">
-Call Us Today
-</a>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="intro">
-
-<h2 class="section-title">
-A Modern Logistics Partner
-</h2>
-
-<p>
-
-Stoney Logistics delivers reliable transport solutions throughout
-the United Kingdom. Combining vehicle movement services, dedicated
-courier operations and nationwide delivery support, we provide
-customers with a dependable logistics partner focused on safety,
-efficiency and exceptional service.
-
-</p>
-
-</div>
-
-</section>
-
-<section class="section" id="services">
-
-<h2 class="section-title">
-Our Services
-</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Vehicle Transport</h3>
-<p>
-Professional vehicle collection and delivery services for
-dealerships, businesses and private customers throughout the UK.
-</p>
-</div>
-
-<div class="card">
-<h3>Nationwide Delivery</h3>
-<p>
-Fast 
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px
